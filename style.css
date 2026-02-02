@@ -1,0 +1,21 @@
+@keyframes myAnimation {
+  0% {
+    background-color: red;
+    transform: translateX(0); /* Start position */
+  }
+  50% {
+    background-color: blue;
+    transform: translateX(100px); /* Intermediate position */
+  }
+  100% {
+    background-color: green;
+    transform: translateX(0); /* End position */
+  }
+}
+
+.hero{
+    animation-name: myAnimation;
+  animation-duration: 4s;
+  
+  animation-direction: alternate; /* Play forwards then backwards */
+}
